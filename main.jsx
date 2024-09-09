@@ -3,7 +3,7 @@ const App = () => {
   const [content, setContent] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/gumData.json")
+    fetch("gumData.json")
       .then((response) => response.json())
       .then((jsonData) => setData(jsonData))
       .catch((error) => console.error("データの取得に失敗しました:", error));
